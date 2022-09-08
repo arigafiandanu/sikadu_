@@ -9,6 +9,12 @@ class AppColors {
   static const lightblue = Color(0xFF4B68D1);
   static const blackshade = Color(0xFF555555);
   static const hintText = Color(0xFFC7C7CD);
+  static Color? biruTerang = Colors.blue[50];
+  static Color? merahTerang = Colors.red[50];
+  static Color? hijauTerang = Colors.green[50];
+  static Color? birugelap = Colors.blue;
+  static Color? merahGelap = Colors.red;
+  static Color? hijauGelap = Colors.green;
 }
 
 class KTextStyle {

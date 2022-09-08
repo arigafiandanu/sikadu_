@@ -95,7 +95,7 @@ class loginView extends StatelessWidget {
           ),
           AuthButton(
             onTap: () {
-              Get.toNamed(RoutesName.home);
+              Get.offAllNamed(RoutesName.home);
             },
             text: "Login",
           )
