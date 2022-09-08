@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:sikadu_ortu/app/routes/routes_name.dart';
 import 'package:sikadu_ortu/app/style/text_style.dart';
 import 'package:sikadu_ortu/app/widget/custom_widget.dart';
 
@@ -124,6 +125,12 @@ class HomepageView extends StatelessWidget {
                 ],
               ),
             ),
+            AuthButton(
+              onTap: () {
+                Get.offNamed(RoutesName.login);
+              },
+              text: "Logout",
+            )
           ],
         ),
       ),
