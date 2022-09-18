@@ -1,4 +1,8 @@
 import 'package:get/get.dart';
+import 'package:sikadu_ortu/app/binding/dashboard_binding.dart';
+import 'package:sikadu_ortu/app/binding/home_binding.dart';
+import 'package:sikadu_ortu/app/binding/listChat_binding.dart';
+import 'package:sikadu_ortu/app/binding/profil_binding.dart';
 import 'package:sikadu_ortu/app/routes/routes_name.dart';
 import 'package:sikadu_ortu/app/view/LupaPass_view.dart';
 import 'package:sikadu_ortu/app/view/chat_view.dart';
@@ -17,6 +21,7 @@ class appPage {
     GetPage(
       name: RoutesName.home,
       page: () => HomepageView(),
+      binding: homeBinding(),
     ),
     GetPage(
       name: RoutesName.lupaPas,
@@ -29,14 +34,17 @@ class appPage {
     GetPage(
       name: RoutesName.listchat,
       page: () => listChat(),
+      binding: listChatBinding(),
     ),
     GetPage(
       name: RoutesName.profil,
       page: () => profilView(),
+      binding: profilBinding(),
     ),
     GetPage(
       name: RoutesName.dashboard,
       page: () => dashboardView(),
+      binding: DashboardBinding(),
     ),
   ];
 }

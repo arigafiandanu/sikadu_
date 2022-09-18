@@ -13,6 +13,7 @@ environment:
 dependencies:
   convex_bottom_bar: ^3.0.0
   cupertino_icons: ^1.0.2
+  persistent_bottom_nav_bar: ^5.0.2
   flutter:
     sdk: flutter
   get: ^4.6.5
