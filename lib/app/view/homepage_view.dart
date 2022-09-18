@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:lottie/lottie.dart';
 import 'package:sikadu_ortu/app/routes/routes_name.dart';
 import 'package:sikadu_ortu/app/style/text_style.dart';
 import 'package:sikadu_ortu/app/widget/custom_widget.dart';
@@ -69,11 +70,15 @@ class HomepageView extends StatelessWidget {
                         ),
                         ClipOval(
                           child: Container(
-                            height: 45,
-                            width: 45,
+                            height: 50,
+                            width: 50,
                             decoration: BoxDecoration(
                               color: AppColors.biruTerang,
                               borderRadius: BorderRadius.circular(25),
+                            ),
+                            child: Lottie.asset(
+                              "assets/lottie/avatar.json",
+                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -98,39 +103,33 @@ class HomepageView extends StatelessWidget {
                     ontap: () {},
                     warnaTerang: AppColors.grayshade,
                     warna: AppColors.lightblue,
-                    icon: Icon(Icons.category_outlined),
+                    icon: Icon(Icons.speaker_notes),
                     kategori: "Pengumuman",
                   ),
                   cardhomepage(
                     ontap: () {},
                     warnaTerang: AppColors.grayshade,
                     warna: AppColors.blue,
-                    icon: Icon(Icons.category_outlined),
+                    icon: Icon(Icons.person_pin_circle),
                     kategori: "Absensi",
                   ),
                   cardhomepage(
                     ontap: () {},
                     warnaTerang: AppColors.grayshade,
                     warna: AppColors.blue,
-                    icon: Icon(Icons.category_outlined),
+                    icon: Icon(Icons.countertops),
                     kategori: "Rekap Nilai",
                   ),
                   cardhomepage(
                     ontap: () {},
                     warnaTerang: AppColors.grayshade,
                     warna: AppColors.blue,
-                    icon: Icon(Icons.category_outlined),
+                    icon: Icon(Icons.schedule),
                     kategori: "Jadwal",
                   ),
                 ],
               ),
             ),
-            AuthButton(
-              onTap: () {
-                Get.offNamed(RoutesName.login);
-              },
-              text: "Logout",
-            )
           ],
         ),
       ),

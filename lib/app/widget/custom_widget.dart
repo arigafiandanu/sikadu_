@@ -115,6 +115,7 @@ class cardhomepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      elevation: 5,
       color: warnaTerang,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(20.0),

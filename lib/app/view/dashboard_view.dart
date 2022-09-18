@@ -1,7 +1,6 @@
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 import 'package:sikadu_ortu/app/controllers/dashboard_c_Controller.dart';
 import 'package:sikadu_ortu/app/view/homepage_view.dart';
 import 'package:sikadu_ortu/app/view/listChat_view.dart';
@@ -26,17 +25,16 @@ class dashboardView extends StatelessWidget {
             ),
           ),
           bottomNavigationBar: ConvexAppBar(
-            style: TabStyle.textIn,
+            style: TabStyle.flip,
             elevation: 5,
             activeColor: Colors.white,
             items: const [
               TabItem(icon: Icons.home, title: 'Home'),
               TabItem(icon: Icons.message, title: 'Pesan'),
-              TabItem(icon: Icons.people, title: 'Profile'),
+              TabItem(icon: Icons.person, title: 'Profil'),
             ],
-            initialActiveIndex: controller.tabindex, 
+            initialActiveIndex: controller.tabindex,
             onTap: controller.pindahTabIndex,
-            
           ),
         );
       },
