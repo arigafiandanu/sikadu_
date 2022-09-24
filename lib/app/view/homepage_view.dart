@@ -22,6 +22,7 @@ class HomepageView extends StatelessWidget {
       //   ),
       // ),
       body: SingleChildScrollView(
+        // physics: const AlwaysScrollableScrollPhysics(),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -89,45 +90,73 @@ class HomepageView extends StatelessWidget {
               ),
             ),
             Container(
-              height: Get.height * 0.6,
+              height: Get.height * 0.75,
               width: Get.width,
               child: GridView.count(
                 shrinkWrap: true,
-                physics: const NeverScrollableScrollPhysics(),
+                // physics: const NeverScrollableScrollPhysics(),
                 crossAxisCount: 2,
                 padding: const EdgeInsets.all(15),
                 crossAxisSpacing: 10,
                 mainAxisSpacing: 10,
                 children: [
                   cardhomepage(
-                    ontap: () {},
+                    ontap: () {
+                      Get.toNamed(RoutesName.pengumuman);
+                    },
                     warnaTerang: AppColors.grayshade,
                     warna: AppColors.lightblue,
-                    icon: Icon(Icons.speaker_notes),
+                    icon: Icon(
+                      Icons.speaker_notes,
+                      size: 35,
+                    ),
                     kategori: "Pengumuman",
                   ),
                   cardhomepage(
-                    ontap: () {},
+                    ontap: () {
+                      Get.toNamed(RoutesName.absensi);
+                    },
                     warnaTerang: AppColors.grayshade,
                     warna: AppColors.blue,
-                    icon: Icon(Icons.person_pin_circle),
+                    icon: Icon(
+                      Icons.person_pin_circle,
+                      size: 35,
+                    ),
                     kategori: "Absensi",
                   ),
                   cardhomepage(
-                    ontap: () {},
+                    ontap: () {
+                      Get.toNamed(RoutesName.rekapNilai);
+                    },
                     warnaTerang: AppColors.grayshade,
                     warna: AppColors.blue,
-                    icon: Icon(Icons.countertops),
+                    icon: Icon(
+                      Icons.countertops,
+                      size: 35,
+                    ),
                     kategori: "Rekap Nilai",
                   ),
                   cardhomepage(
-                    ontap: () {},
+                    ontap: () {
+                      Get.toNamed(RoutesName.jadwal);
+                    },
                     warnaTerang: AppColors.grayshade,
                     warna: AppColors.blue,
-                    icon: Icon(Icons.schedule),
+                    icon: Icon(
+                      Icons.schedule,
+                      size: 35,
+                    ),
                     kategori: "Jadwal",
                   ),
                 ],
+              ),
+            ),
+            Container(
+              width: Get.width,
+              height: Get.height / 3,
+              color: Colors.grey[100],
+              child: Center(
+                child: Text("Pengumuman"),
               ),
             ),
           ],

@@ -82,7 +82,7 @@ class loginView extends StatelessWidget {
                         Get.toNamed(RoutesName.lupaPas);
                       },
                       child: Text(
-                        "Forgot Password?",
+                        "Lupa Password?",
                         style: TextStyle(
                             color: AppColors.blue.withOpacity(0.7),
                             fontWeight: FontWeight.w500),
