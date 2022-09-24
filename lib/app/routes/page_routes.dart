@@ -5,12 +5,16 @@ import 'package:sikadu_ortu/app/binding/listChat_binding.dart';
 import 'package:sikadu_ortu/app/binding/profil_binding.dart';
 import 'package:sikadu_ortu/app/routes/routes_name.dart';
 import 'package:sikadu_ortu/app/view/LupaPass_view.dart';
+import 'package:sikadu_ortu/app/view/absensi_view.dart';
 import 'package:sikadu_ortu/app/view/chat_view.dart';
 import 'package:sikadu_ortu/app/view/dashboard_view.dart';
 import 'package:sikadu_ortu/app/view/homepage_view.dart';
+import 'package:sikadu_ortu/app/view/jadwal_view.dart';
 import 'package:sikadu_ortu/app/view/listChat_view.dart';
 import 'package:sikadu_ortu/app/view/login_view.dart';
+import 'package:sikadu_ortu/app/view/pengumuman_view.dart';
 import 'package:sikadu_ortu/app/view/profil_view.dart';
+import 'package:sikadu_ortu/app/view/rekapNilai_view.dart';
 
 class appPage {
   static final pages = [
@@ -45,6 +49,22 @@ class appPage {
       name: RoutesName.dashboard,
       page: () => dashboardView(),
       binding: DashboardBinding(),
+    ),
+    GetPage(
+      name: RoutesName.absensi,
+      page: () => AbsensiView(),
+    ),
+    GetPage(
+      name: RoutesName.jadwal,
+      page: () => JadwalView(),
+    ),
+    GetPage(
+      name: RoutesName.pengumuman,
+      page: () => PengumumanView(),
+    ),
+    GetPage(
+      name: RoutesName.rekapNilai,
+      page: () => RekapNilaiView(),
     ),
   ];
 }
