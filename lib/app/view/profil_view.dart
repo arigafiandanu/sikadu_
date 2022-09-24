@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
@@ -33,14 +32,14 @@ class profilView extends StatelessWidget {
                 ),
               ),
               const Text(
-                "Hana Hummaira",
+                "Nama Siswa",
                 style: TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               const Text(
-                "5180411999",
+                "66666666",
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.w300,
@@ -104,7 +103,6 @@ class profilView extends StatelessWidget {
             ),
           ),
           AuthButton(
-            
             onTap: () {
               Get.offNamed(RoutesName.login);
             },

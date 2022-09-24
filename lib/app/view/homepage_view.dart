@@ -52,7 +52,7 @@ class HomepageView extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: const [
                             Text(
-                              "Hallo, iraaa",
+                              "Hallo, ibu xxxx",
                               style: TextStyle(
                                 color: Colors.black87,
                                 fontWeight: FontWeight.w800,
@@ -60,7 +60,7 @@ class HomepageView extends StatelessWidget {
                               ),
                             ),
                             Text(
-                              "Bagaimana kabar .... hari ini???",
+                              "Bagaimana kabar anak anda hari ini???",
                               style: TextStyle(
                                 color: Colors.black38,
                                 fontWeight: FontWeight.w400,
